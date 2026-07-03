@@ -13,7 +13,7 @@ ejercicio1.html al ejercicio10.html: Código fuente de los ejercicios resueltos.
 
 Despliegue en Línea
 El proyecto completo está alojado y funcionando mediante GitHub Pages, permitiendo la interacción con los formularios y el código JavaScript en un entorno real.
-🔗 [PONDREMOS TU LINK AQUÍ EN UN MOMENTO]
+https://oscarzurielgarciaortega.github.io/actividad1-tema2-prograweb/
 
 Autor
 Oscar Zuriel García Ortega
