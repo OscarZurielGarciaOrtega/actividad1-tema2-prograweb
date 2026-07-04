@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de pesos a dolares | Ejercicio 12</title>
+    <script src="js/ejercicio12.js"></script>
+    <link rel="stylesheet" href="css/ejercicio12.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Conversor de pesos a dolares</h1>
+
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label for="pesos">Ingrese una cantidad (En pesos)</label>
+                <input type="number" id="pesos" placeholder="Ejemplo: 100" required min="1">
+            </div>
+            <div class="grupo-formulario">
+                <input type="number" id="dolar" readonly placeholder="El resultado aparecerá aquí">
+            </div>
+
+            <button type="button" class="boton-enviar" onclick="conversion()" style="width: 100%;">
+                Convertir
+            </button>
+        </form>
+    </div>
+</body>
+</html>
