@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,4 +34,41 @@
     </div>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones Alumnos | Ejercicio 15</title>
+    <script src="js/ejercicio15.js"></script>
+    <link rel="stylesheet" href="css/ejercicio15.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Calificaciones Alumnos</h1>
+
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label for="nombre">Por favor, Ingresa el nombre del alumno.</label>
+                <input type="text" id="nombre" placeholder="Ejemplo: Juan Ramirez" required>
+                <label for="calificacion">Por favor, Ingresa la calificacón del alumno.</label>
+                <input type="number" id="calificacion" placeholder="Ejemplo: 75" required min="1">
+                <button type="button" class="boton-enviar" onclick="agregarAlumno()" style="width: 100%;">
+                    Agregar Alumno
+                </button>
+            </div>
+            <div class="grupo-formulario">
+                <input type="text" id="promedio" readonly placeholder="Promedio">
+                <input type="text" id="masBajo" readonly placeholder="Calificación más baja">
+                <input type="text" id="masAlto" readonly placeholder="Calificación más alta">
+            </div>
+            <button type="button" class="boton-enviar" onclick="calcularPromedio()" style="width: 100%;">
+                Calcular
+            </button>
+        </form>
+    </div>
+    
+</body>
+>>>>>>> 4f9b9a1e672d16588f4591f014d950df7014db9b
 </html>

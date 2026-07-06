@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
   1. VARIABLES CSS 
 */
@@ -120,4 +121,128 @@ button {
 
 button:hover {
     background-color: #7a65a8; 
+=======
+/*
+  1. VARIABLES CSS 
+*/
+:root {
+    --color-primario: #927dc1;     
+    --color-secundario: #4CC9F0;   
+    --color-fondo: #F8F9FA;        
+    --color-texto: #2B2D42;        
+    --color-borde: #E9ECEF;        
+}
+
+/*
+  2. RESET BÁSICO
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/*
+  3. ESTILOS GENERALES
+*/
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6; 
+    padding: 40px 20px; 
+}
+
+/*
+  4. CONTENEDOR PRINCIPAL
+*/
+.contenedor-formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--color-primario);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/*
+  5. GRUPOS DE FORMULARIO
+*/
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500; 
+    font-size: 14px;
+}
+
+/*
+  6. INPUTS BÁSICOS
+*/
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    transition: all 0.3s; 
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: var(--color-secundario);
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2); 
+}
+
+/*
+  7. ESTILO ESPECÍFICO PARA EL INPUT READONLY (El del resultado)
+  - Fondo gris y cursor de prohibido para indicar que está bloqueado
+*/
+input[readonly] {
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: bold;
+    cursor: not-allowed;
+    border-color: #ced4da;
+}
+
+/*
+  8. DISPOSICIÓN EN COLUMNAS (Para el botón y el resultado juntos)
+*/
+.grupo-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+/*
+  9. BOTÓN DE ENVÍO
+*/
+button {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #7a65a8; 
+>>>>>>> 4f9b9a1e672d16588f4591f014d950df7014db9b
 }
