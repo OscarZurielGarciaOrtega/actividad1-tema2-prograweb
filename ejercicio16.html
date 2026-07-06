@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | Funciones Flecha</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <link rel="stylesheet" href="css/ejercicio16.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Calculadora Básica</h1>
+
+        <form class="formulario">
+            <div class="grupo-formulario">
+                <label for="numero1">Por favor, Ingresa el primer número.</label>
+                <input type="number" id="numero1" placeholder="Ejemplo: 10" required>
+                
+                <label for="numero2">Por favor, Ingresa el segundo número.</label>
+                <input type="number" id="numero2" placeholder="Ejemplo: 5" required>
+            </div>
+            
+            <div class="grupo-formulario grid-botones">
+                <button type="button" class="boton-enviar" onclick="calcularOperacion('suma')" style="width: 100%;">
+                    Sumar (+)
+                </button>
+                <button type="button" class="boton-enviar" onclick="calcularOperacion('resta')" style="width: 100%;">
+                    Restar (-)
+                </button>
+                <button type="button" class="boton-enviar" onclick="calcularOperacion('multiplicacion')" style="width: 100%;">
+                    Multiplicar (x)
+                </button>
+                <button type="button" class="boton-enviar" onclick="calcularOperacion('division')" style="width: 100%;">
+                    Dividir (/)
+                </button>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="resultado">Resultado de la operación:</label>
+                <input type="text" id="resultado" readonly placeholder="El resultado aparecerá aquí">
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/ejercicio16.js"></script>
+</body>
+</html>
